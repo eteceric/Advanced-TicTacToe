@@ -1,8 +1,4 @@
-/**
- * CIS 120 Game HW
- * (c) University of Pennsylvania
- * @version 2.1, Apr 2017
- */
+
 
 import java.awt.*;
 import java.awt.event.*;
@@ -12,10 +8,6 @@ import static java.lang.Math.*;
 import java.io.*;
 /**
  * GameCourt
- * 
- * This class holds the primary game logic for how different objects interact with one another. Take
- * time to understand how the timer interacts with the different methods and how it repaints the GUI
- * on every tick().
  */
 @SuppressWarnings("serial")
 public class GameCourt extends JPanel {
@@ -269,6 +261,7 @@ public class GameCourt extends JPanel {
             p1wins++;
             try{
                 scoreMap = getScores(scoreMap);
+		player = 3 - player;
                 scoreMap.put(getMoves(), "Player "+player+" - won against Player "+(3-player)+" in "+
                         getMoves()+" moves!");
                 TicTacToe.storeHighScore(scoreMap);
@@ -283,6 +276,7 @@ public class GameCourt extends JPanel {
             p2wins++;
             try{
                 scoreMap = getScores(scoreMap);
+		player = 3 - player;
                 scoreMap.put(getMoves(), "Player "+player+" - won against Player "+(3-player)+" in "+
                         getMoves()+" moves!");
                 TicTacToe.storeHighScore(scoreMap);

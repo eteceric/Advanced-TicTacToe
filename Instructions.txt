@@ -11,3 +11,4 @@ place a mark somewhere on that corresponding board.
 This is represented by the board being yellow.
 If a corresponding board has been claimed 
 already, then this player can put a mark anywhere.
+Use mouse clicks to place marks.

@@ -27,7 +27,7 @@ public class TicTacToe {
     public static void drawInstructions(Graphics g) throws IOException{
 
         try {
-            BufferedReader r = new BufferedReader(new FileReader("src/Instructions.txt"));
+            BufferedReader r = new BufferedReader(new FileReader("Instructions.txt"));
 
             int numLine = 0;
             while (r.ready()){
@@ -47,7 +47,7 @@ public class TicTacToe {
 
             try{   
                                 
-                BufferedWriter r = new BufferedWriter(new FileWriter("src/highscores.txt"));
+                BufferedWriter r = new BufferedWriter(new FileWriter("highscores.txt"));
                 int i = 0;
                 while (i < 82){
                     if (scoreMap.containsKey(i)){
@@ -73,7 +73,7 @@ public class TicTacToe {
         try{
             int i = 0;
             String s = " ";
-            BufferedReader r = new BufferedReader(new FileReader("src/highscores.txt"));
+            BufferedReader r = new BufferedReader(new FileReader("highscores.txt"));
             while (r.ready()){
                 s = r.readLine();
                 g.drawString(s, 50, 15 * (17 + i));

@@ -34,7 +34,7 @@ public class GameCourt extends JPanel {
 
     
     public boolean playing = false; // whether the game is running 
-    private JLabel status; // Current status text, i.e. "Running..."
+    private JLabel status; // Current status text, "Running..."
 
     // Game constants
     public static final int COURT_WIDTH = 360;
@@ -163,7 +163,7 @@ public class GameCourt extends JPanel {
     public TreeMap getScores(TreeMap<Integer, String> map) throws IOException{
         map = new TreeMap<Integer, String>();
         try{
-        BufferedReader r = new BufferedReader(new FileReader("src/highscores.txt"));
+        BufferedReader r = new BufferedReader(new FileReader("highscores.txt"));
         
         while (r.ready()){
             int mves = 0;

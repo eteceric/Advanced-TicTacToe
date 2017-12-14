@@ -1,0 +1,13 @@
+Advanced Tic Tac Toe: There are 9 small tic tac toe
+boards within one large tic tac toe board. Just like 
+regular tic tac toe, you get three in a row, column,
+or diagonal and you claim the board. The goal of this
+game is to claim three small tic tac toe boards that
+will let you claim the large tic tac toe board. There's
+a twist: after one player goes, the spot on the small 
+board that they marked corresponds to a small board 
+on the large tic tac toe. The second player can only
+place a mark somewhere on that corresponding board.
+This is represented by the board being yellow.
+If a corresponding board has been claimed 
+already, then this player can put a mark anywhere.

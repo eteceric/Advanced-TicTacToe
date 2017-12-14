@@ -1,5 +1,6 @@
 # Advanced-TicTacToe
 Advanced TicTacToe is a surprisingly complex strategy game that puts a spin on the classic Tic Tac Toe game. 
+This implementation was written and designed by Eric Wang, in CIS 120 at the University of Pennsylvania.
 
 Description:
 Advanced Tic Tac Toe: There are 9 small tic tac toe
